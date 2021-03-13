@@ -1,2 +1,7 @@
-# capuccino
-Repositório com vários níveis do app para calcular medidas de uma receita de cappucino.
+# Capuccino
+
+## 1 - Implementação em Vanila JavaScript e HTML.
+
+
+## 2 - Implementação em React.
+
