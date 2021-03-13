@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="resp" align="center">
+    <h1>Capuccino</h1>
+    <div align="center">
+      <form onsubmit=event.preventDefault();console.log(event);handleSubmit()>
+        <label for="numOfGlasses">Número de copos:</label><br>
+        <input type="text" id="numOfGlasses" name="numOfGlasses" autocomplete="off"><br>
+        <label for="glassVolume">Volume do copo (em ml):</label><br>
+        <input type="text" id="glassVolume" name="glassVolume" autocomplete="off"><br><br>
+        <input type="submit" value="Calcular">
+        <script src="script.js"></script>
+        <input type="reset" value="Limpar" id='reset'>
+      </form>
+    </div>
+    <div id="receita"></div>
+  </div>
+</body>
+
+
+</html>
