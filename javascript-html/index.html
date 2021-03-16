@@ -5,24 +5,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cappucino</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-  <div id="resp" align="center">
-    <h1>Capuccino</h1>
-    <div align="center">
+  <div>
+    <div class='form-box'>
       <form onsubmit=event.preventDefault();console.log(event);handleSubmit()>
-        <label for="numOfGlasses">Número de copos:</label><br>
-        <input type="text" id="numOfGlasses" name="numOfGlasses" autocomplete="off"><br>
-        <label for="glassVolume">Volume do copo (em ml):</label><br>
-        <input type="text" id="glassVolume" name="glassVolume" autocomplete="off"><br><br>
-        <input type="submit" value="Calcular">
+        <h3>RECEITA DE CAPPUCINO</h3>
+        <div class="input-box">
+          <input type="text" id="numOfGlasses" name="numOfGlasses" autocomplete="off" placeholder="Número de copos">
+        </div>
+        <div class="input-box">
+          <input type="text" id="glassVolume" name="glassVolume" autocomplete="off"
+            placeholder="Volume do copo (em ml)"><br><br>
+        </div>
+        <input type="submit" id="submit" value="Calcular">
         <script src="script.js"></script>
         <input type="reset" value="Limpar" id='reset'>
       </form>
     </div>
     <div id="receita"></div>
+  </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="recipe">
+
+      </div>
+    </div>
+  </div>
+
   </div>
 </body>
 
